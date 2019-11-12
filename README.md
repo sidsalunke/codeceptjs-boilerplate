@@ -8,7 +8,9 @@ CodeceptJs using WebdriverIO to run UI tests
 
 - Java should be installed (required to run the selenium-standalone server)
 
-### **Run the following steps to execute the tests:**
+- Docker (if you want to run tests using Docker)
+
+### **Running tests locally:**
 
 - Clone the repository
 
@@ -17,3 +19,12 @@ CodeceptJs using WebdriverIO to run UI tests
 - Setup and start the selenium-standalone server by running `npm run start:selenium-standlone-server`
 
 - In a separate terminal, execute the tests by running `npm run test`
+
+### **Running tests using Docker:**
+
+- Install docker for [mac](https://docs.docker.com/docker-for-mac/) or [windows](https://docs.docker.com/docker-for-windows/)
+
+- Run tests using `docker-compose` by running the below command
+```
+docker-compose up --abort-on-container-exit --exit-code-from tests
+```
