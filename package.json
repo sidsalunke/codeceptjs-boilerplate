@@ -1,0 +1,18 @@
+{
+  "name": "codeceptjs-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:selenium-standlone-server": "selenium-standalone install --silent && selenium-standalone start",
+    "stop:selenium-standlone-server": "pkill -f selenium-standalone",
+    "test": "cd src/config && codeceptjs run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "2.3.5",
+    "selenium-standalone": "6.16.0",
+    "webdriverio": "5.16.6"
+  }
+}
