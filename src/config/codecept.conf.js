@@ -10,7 +10,8 @@ exports.config = {
       timeouts: {
         "script": 60000,
         "page load": 10000
-      }
+      },
+      host: 'selenium-standalone-server',
     }
   },
   include: {
